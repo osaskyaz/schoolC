@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Attendance</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="brand">school project</a>
+    
+            <ul class="nav-menu">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="registration.html" class="nav-link">Registration</a></li>
+                <li class="nav-item"><a href="attendance.html" class="nav-link">Attendance</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Results</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="toggleBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <form> 
+        
+        <center>  <h1> School Attendance Form</h1> </center>  
+        
+    
+        <div class="container">  
+        
+      <label> Full Name </label>  
+      <input type="text" name="fullname" placeholder= "Full Name" class="fullname" size="15" required />
+      <br>
+      <br>
+    
+    
+      <label> Roll number </label>   
+      <input type="text" name="rollnumber" placeholder= "rollNumber" class="rollnumber" size="10" required />
+      <br>
+      <br>
+    
+      <label> Student Class </label>   
+      <input type="text" name="studentclass" placeholder= "studentClass" class="studentclass" size="10" required />
+      <br>
+      <br>
+    
+      <label> Total Subject </label>   
+      <input type="text" name="totalsubject" placeholder="TotalSubject"  class="totalsubject" size="15" required />
+      <br>
+      <br>
+    
+      <label> Age </label>   
+      <input type="text" name="age" placeholder= "Age" class="age" size="15" required />
+      <br>
+      <br>
+    
+      <center><button type="button" class="submitBtn">Submit</button></center> 
+    
+        
+        <div class="box">
+            
+            <span class="firstnameOut"><h2>name</h2></span>
+            <br>
+            <span class="rollnumberOut"><h2>roll</h2></span>
+            <br>
+            <span class="studentclassOut"><h2>stud</h2></span>
+            <br>
+            <span class="totalsubjectOut"><h2>total</h2></span>
+            <br><br><br>
+            <span class="ageOut"><h2>ag</h2></span>
+            
+             
+    
+        </div>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

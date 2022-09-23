@@ -1,3 +1,6 @@
+             
+             /* Beginning of navbar page */
+
 const toggleBtn = document.querySelector(".toggleBtn");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -7,6 +10,10 @@ function bond(){
     toggleBtn.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
+
+          /* end of Index page and Navbar */
+             
+            /* Beginning of Registration page */
 
 
 function validate(){
@@ -76,3 +83,93 @@ function validate(){
    }
    return( true );
 }
+
+            /* end of Index page and Navbar */
+             
+            /* Beginning of attendance page */
+
+const submitBtn = document.querySelector('.submitBtn');
+const fullname = document.querySelector('.fullname');
+const firstnameOut = document.querySelector('.firstnameOut');
+            
+submitBtn.addEventListener('click', change);
+            
+function change(){
+let content = fullname.value;
+            
+             if (content === '') {
+                alert('please fill')
+             } else {
+                firstnameOut.innerHTML = content;
+                fullname.value ='';
+             }
+             
+            }
+            
+            
+            const rollnumber = document.querySelector('.rollnumber');
+            const rollnumberOut = document.querySelector('.rollnumberOut');
+            
+            submitBtn.addEventListener('click', getroll);
+            
+            function getroll(){
+             let content = rollnumber.value;
+            
+             if (content === '') {
+                alert('please fill')
+             } else {
+                rollnumberOut.innerHTML = content;
+                rollnumber.value ='';
+             }
+             
+            }
+            
+            const studentclass = document.querySelector('.studentclass');
+            const studentclassOut = document.querySelector('.studentclassOut');
+            
+            submitBtn.addEventListener('click', getclass);
+            
+            function getclass(){
+             let content = studentclass.value;
+            
+             if (content === '') {
+                alert('please fill')
+             } else {
+                studentclassOut.innerHTML = content;
+                studentclass.value ='';
+             }
+             
+            }
+            
+            const totalsubject = document.querySelector('.totalsubject');
+            const totalsubjectOut = document.querySelector('.totalsubjectOUt');
+            
+            submitBtn.addEventListener('click', getsubject);
+            
+            function getsubject(){
+             let content = totalsubject.value;
+             if (content === '') {
+                alert('please fill')
+             } else {
+                totalsubjectOut.innerHTML = content;
+                totalsubject.value ='';
+             }
+             
+            }
+            
+            const age = document.querySelector('.age');
+            const ageOut = document.querySelector('.ageOut');
+            
+            submitBtn.addEventListener('click', getage);
+            
+            function getage(){
+             let content = age.value;
+             if (content === '') {
+                alert('please fill')
+             } else {
+                ageOut.innerHTML = content;
+                age.value ='';
+             }
+             
+            }
+            
